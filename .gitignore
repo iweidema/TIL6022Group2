@@ -1,0 +1,8 @@
+# Grote databestanden niet uploaden naar GitHub
+data/raw/*.csv
+data/processed/*.csv
+*.csv
+
+# Tijdelijke Jupyter checkpoints en cache
+.ipynb_checkpoints/
+__pycache__/
