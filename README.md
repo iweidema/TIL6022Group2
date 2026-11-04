@@ -19,7 +19,8 @@ Project for TIL6022 Programming (TU Delft). We analyse pedestrian flow data from
 │   │   ├── sensor_locations.csv
 │   │   └── SAIL_Amsterdam_Weather_Data.csv
 │   └── processed/
-│       └── basisdataset.csv        # made by notebooks/data_cleaning.ipynb
+│       ├── basisdataset.csv        # made by notebooks/data_cleaning.ipynb
+│       └── analyse_22aug_16-18.csv # analysis period, made by the same notebook
 └── figures/                        # figures saved by the notebooks
 ```
 
@@ -37,7 +38,7 @@ Project for TIL6022 Programming (TU Delft). We analyse pedestrian flow data from
    ```
    pip install -r requirements.txt
    ```
-2. Run `notebooks/data_cleaning.ipynb` from top to bottom. This creates `data/processed/basisdataset.csv` and `figures/flow_3_sensors.png`.
+2. Run `notebooks/data_cleaning.ipynb` from top to bottom. This creates `data/processed/basisdataset.csv`, `data/processed/analyse_22aug_16-18.csv` and the figures in `figures/`.
 3. Run `project_report_group_2.ipynb` for the analysis and the report.
 
 ## Data cleaning (short)
@@ -48,6 +49,7 @@ Project for TIL6022 Programming (TU Delft). We analyse pedestrian flow data from
 - The GASA sensors were only switched on at 20 Aug 08:12. The zeros before that are set to empty (NaN).
 - Added location and effective width, and calculated `flow_per_m` (people per metre of width).
 - Added weather per 10-minute block. The weather file only covers 20 Aug 02:00 – 22 Aug 18:30, so weather is empty after that. We assume the weather times are local time.
+- Analysis period: **Friday 22 August 2025, 16:00–18:00**. This is the busiest 2-hour window of the busiest day that still has weather data.
 
 ## Authors
 
