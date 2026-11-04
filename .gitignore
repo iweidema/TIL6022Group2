@@ -4,3 +4,6 @@ __pycache__/
 
 # Mac
 .DS_Store
+
+# Ruwe scheepsdata is 4,5 GB, te groot voor GitHub
+data/raw/Vesselposition_data_20-24Aug2025.csv
