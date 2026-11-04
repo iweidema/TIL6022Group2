@@ -43,7 +43,7 @@ Project for TIL6022 Programming (TU Delft). We analyse pedestrian flow data from
 ## Data cleaning (short)
 
 - Checked for empty values, duplicate timestamps and gaps in time: none found.
-- Selected 3 sensors: **GASA-03** (Oosterdoksbrug), **GASA-04** (CS towards Oosterdokskade) and **GACM-04** (Damrak).
+- Selected 3 sensors: **GASA-03** (Oosterdoksbrug) and **GASA-04** (CS towards Oosterdokskade) as busy places on the event route, and **CMSA-GAWW-17** (Oudezijds Voorburgwal 206) as a quiet place in the city centre.
 - Added both walking directions together into one flow per sensor.
 - The GASA sensors were only switched on at 20 Aug 08:12. The zeros before that are set to empty (NaN).
 - Added location and effective width, and calculated `flow_per_m` (people per metre of width).
